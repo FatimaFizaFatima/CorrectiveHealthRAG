@@ -16,3 +16,6 @@ psycopg2-binary
 fastapi==0.141.1
 starlette==1.6.0
 uvicorn
+fastmcp
+pytest
+langchain[mcp]>=1.4.6,<2

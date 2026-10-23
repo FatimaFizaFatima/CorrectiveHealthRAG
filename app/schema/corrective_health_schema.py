@@ -14,4 +14,13 @@ class QuerySchema(BaseModel):
 class ResponseSchema(BaseModel):
 
     answer : str
+    tools_used : list[str] = []
+    thread_id : str | None = None
+    requires_approval : bool = False
+    pending_actions : list[dict] = []
+
+
+class ApprovalSchema(BaseModel):
+    thread_id : str
+    approved : bool
 
